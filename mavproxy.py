@@ -1599,7 +1599,7 @@ if __name__ == '__main__':
 
     if opts.mav09:
         os.environ['MAVLINK09'] = '1'
-    import mavutil, mavwp
+    from pymavlink import mavutil, mavwp
 
     # global mavproxy state
     mpstate = MPState()
